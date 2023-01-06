@@ -11,6 +11,7 @@ if "%doall%"=="All" echo We're not in Kansas anymore!
 
 echo Starting...
 rem call :cleandir "Binaries\Win64" %doall%
+call :cleandir Build %doall%
 call :cleandir Binaries %doall%
 call :cleandir DerivedDataCache %doall%
 call :cleandir Intermediate %doall%
